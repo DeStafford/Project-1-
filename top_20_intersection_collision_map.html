@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_06d951a5d8ff8fe97394ae4b7260ccb8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    <h3 align="center" style="font-size:16px"><b>Top 20 Intersections for Collisions</b></h3>
+    
+            <div class="folium-map" id="map_06d951a5d8ff8fe97394ae4b7260ccb8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_06d951a5d8ff8fe97394ae4b7260ccb8 = L.map(
+                "map_06d951a5d8ff8fe97394ae4b7260ccb8",
+                {
+                    center: [33.40219506100001, -111.92874333],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f728458e4fd14c91b9e85f1c9d20d4c5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_f728458e4fd14c91b9e85f1c9d20d4c5.addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+    
+            var marker_d0b363cc66aaa20ab83b8917bbfed575 = L.marker(
+                [33.41748, -111.90911],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_5ab6d4563876e9bc14053ef8517a9a04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d0b363cc66aaa20ab83b8917bbfed575.setIcon(icon_5ab6d4563876e9bc14053ef8517a9a04);
+        
+    
+        var popup_0310c0b85fe941d5750fe266c7610526 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e06ffd543862710870ab0402fecccbe7 = $(`<div id="html_e06ffd543862710870ab0402fecccbe7" style="width: 100.0%; height: 100.0%;">McClintock Dr / Don Carlos Ave - 25 accidents</div>`)[0];
+                popup_0310c0b85fe941d5750fe266c7610526.setContent(html_e06ffd543862710870ab0402fecccbe7);
+            
+        
+
+        marker_d0b363cc66aaa20ab83b8917bbfed575.bindPopup(popup_0310c0b85fe941d5750fe266c7610526)
+        ;
+
+        
+    
+    
+            var marker_3d1efa2af810a12e0a67b57f03b27b5d = L.marker(
+                [33.43662, -111.90962],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_019917b1462d1123ed6b16bc14393c59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3d1efa2af810a12e0a67b57f03b27b5d.setIcon(icon_019917b1462d1123ed6b16bc14393c59);
+        
+    
+        var popup_b4b086ce9b968c63aa61ca3a6af728cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eea8b42c6309ce7d95b909ce24480488 = $(`<div id="html_eea8b42c6309ce7d95b909ce24480488" style="width: 100.0%; height: 100.0%;">McClintock Dr / SR-202 Exit 8 J-Ramp - 20 accidents</div>`)[0];
+                popup_b4b086ce9b968c63aa61ca3a6af728cd.setContent(html_eea8b42c6309ce7d95b909ce24480488);
+            
+        
+
+        marker_3d1efa2af810a12e0a67b57f03b27b5d.bindPopup(popup_b4b086ce9b968c63aa61ca3a6af728cd)
+        ;
+
+        
+    
+    
+            var marker_92c7f2e6789724dd497893665e423c6a = L.marker(
+                [33.3783, -111.96738],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_0dfc28d905b54976e2995ffc6a179a8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_92c7f2e6789724dd497893665e423c6a.setIcon(icon_0dfc28d905b54976e2995ffc6a179a8b);
+        
+    
+        var popup_9d482d0395cb50c5c762a6205a8cd13d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e144080b087de1e36a1b4ce8e4762c1 = $(`<div id="html_3e144080b087de1e36a1b4ce8e4762c1" style="width: 100.0%; height: 100.0%;">Baseline Rd / I-10 Exit 155 J1-Ramp - 18 accidents</div>`)[0];
+                popup_9d482d0395cb50c5c762a6205a8cd13d.setContent(html_3e144080b087de1e36a1b4ce8e4762c1);
+            
+        
+
+        marker_92c7f2e6789724dd497893665e423c6a.bindPopup(popup_9d482d0395cb50c5c762a6205a8cd13d)
+        ;
+
+        
+    
+    
+            var marker_125ac567721e733b7ffdf32e2f7e0989 = L.marker(
+                [33.37989, -111.92842],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_a51cda08311ae7c7ea818fb4f4f9923a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_125ac567721e733b7ffdf32e2f7e0989.setIcon(icon_a51cda08311ae7c7ea818fb4f4f9923a);
+        
+    
+        var popup_959f7be5bbd061f27c375649b152ce0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0bbdb4c40059af0dfcc5692d869bd1a = $(`<div id="html_b0bbdb4c40059af0dfcc5692d869bd1a" style="width: 100.0%; height: 100.0%;">Rural Rd / Minton Dr - 18 accidents</div>`)[0];
+                popup_959f7be5bbd061f27c375649b152ce0b.setContent(html_b0bbdb4c40059af0dfcc5692d869bd1a);
+            
+        
+
+        marker_125ac567721e733b7ffdf32e2f7e0989.bindPopup(popup_959f7be5bbd061f27c375649b152ce0b)
+        ;
+
+        
+    
+    
+            var marker_b67423d6ac23dc4703f57d0d4dcde87d = L.marker(
+                [33.43662129, -111.9096218],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_07190b894458c525b9f3ef55e542502c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b67423d6ac23dc4703f57d0d4dcde87d.setIcon(icon_07190b894458c525b9f3ef55e542502c);
+        
+    
+        var popup_2e020071d09bfaa8da724f9a540a34e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52bf28933fd38d3c13b61eac5beab198 = $(`<div id="html_52bf28933fd38d3c13b61eac5beab198" style="width: 100.0%; height: 100.0%;">McClintock Dr / SR-202 Exit 8 J-Ramp - 16 accidents</div>`)[0];
+                popup_2e020071d09bfaa8da724f9a540a34e5.setContent(html_52bf28933fd38d3c13b61eac5beab198);
+            
+        
+
+        marker_b67423d6ac23dc4703f57d0d4dcde87d.bindPopup(popup_2e020071d09bfaa8da724f9a540a34e5)
+        ;
+
+        
+    
+    
+            var marker_1ca5c025268a9dcb18a9f3ddccb7f906 = L.marker(
+                [33.4075, -111.92628],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_a7be53a4e72f354dc6566808e96a11d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1ca5c025268a9dcb18a9f3ddccb7f906.setIcon(icon_a7be53a4e72f354dc6566808e96a11d4);
+        
+    
+        var popup_8563c59f4e9680390f9c47e81742d863 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d8e23d07b32e5830c101ddf3e25d4b7 = $(`<div id="html_2d8e23d07b32e5830c101ddf3e25d4b7" style="width: 100.0%; height: 100.0%;">Broadway Rd / Rural Rd - 15 accidents</div>`)[0];
+                popup_8563c59f4e9680390f9c47e81742d863.setContent(html_2d8e23d07b32e5830c101ddf3e25d4b7);
+            
+        
+
+        marker_1ca5c025268a9dcb18a9f3ddccb7f906.bindPopup(popup_8563c59f4e9680390f9c47e81742d863)
+        ;
+
+        
+    
+    
+            var marker_51d0fa8f620cc7aeec5c73cffcdbd57e = L.marker(
+                [33.42938, -111.89183],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_e5f6a89495ea7365500b59babeb3d74c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_51d0fa8f620cc7aeec5c73cffcdbd57e.setIcon(icon_e5f6a89495ea7365500b59babeb3d74c);
+        
+    
+        var popup_66fd1009021fa28e6cc37597e82b8e5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_946e89f594c2a4aef17b66c39205244b = $(`<div id="html_946e89f594c2a4aef17b66c39205244b" style="width: 100.0%; height: 100.0%;">Rio Salado Pkwy / Price Rd - 15 accidents</div>`)[0];
+                popup_66fd1009021fa28e6cc37597e82b8e5e.setContent(html_946e89f594c2a4aef17b66c39205244b);
+            
+        
+
+        marker_51d0fa8f620cc7aeec5c73cffcdbd57e.bindPopup(popup_66fd1009021fa28e6cc37597e82b8e5e)
+        ;
+
+        
+    
+    
+            var marker_bc497e6802444408f77c175674b6b727 = L.marker(
+                [33.40748, -111.89033],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_261b7335a0c21112d6da15dbb2bc0db2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bc497e6802444408f77c175674b6b727.setIcon(icon_261b7335a0c21112d6da15dbb2bc0db2);
+        
+    
+        var popup_6bd8ed5ff1066e927e6d416fe86eed15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b42df68c429decaf4c22566e40b4e022 = $(`<div id="html_b42df68c429decaf4c22566e40b4e022" style="width: 100.0%; height: 100.0%;">Price Rd / Broadway Rd - 15 accidents</div>`)[0];
+                popup_6bd8ed5ff1066e927e6d416fe86eed15.setContent(html_b42df68c429decaf4c22566e40b4e022);
+            
+        
+
+        marker_bc497e6802444408f77c175674b6b727.bindPopup(popup_6bd8ed5ff1066e927e6d416fe86eed15)
+        ;
+
+        
+    
+    
+            var marker_c1282ff087799ccca5a5b078305fc09c = L.marker(
+                [33.42203, -111.92631],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_f51102a10b9971f8d2baba1b73dae071 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c1282ff087799ccca5a5b078305fc09c.setIcon(icon_f51102a10b9971f8d2baba1b73dae071);
+        
+    
+        var popup_e72e04be618e17d771efa8017822a344 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c1bdc0b64651ee8cc42990d8d4ed370 = $(`<div id="html_4c1bdc0b64651ee8cc42990d8d4ed370" style="width: 100.0%; height: 100.0%;">University Dr / Rural Rd - 15 accidents</div>`)[0];
+                popup_e72e04be618e17d771efa8017822a344.setContent(html_4c1bdc0b64651ee8cc42990d8d4ed370);
+            
+        
+
+        marker_c1282ff087799ccca5a5b078305fc09c.bindPopup(popup_e72e04be618e17d771efa8017822a344)
+        ;
+
+        
+    
+    
+            var marker_a3376cbdd5f659db008acbccbf269257 = L.marker(
+                [33.34907, -111.97283],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_b51b02e2de54ae49d9c7c60c426f5e57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a3376cbdd5f659db008acbccbf269257.setIcon(icon_b51b02e2de54ae49d9c7c60c426f5e57);
+        
+    
+        var popup_46397deef76673ec0ba19c4fb3d4541d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f680c72fc77cac0dd2e2e65dfcc239ca = $(`<div id="html_f680c72fc77cac0dd2e2e65dfcc239ca" style="width: 100.0%; height: 100.0%;">Elliot Rd / I-10 Exit 157 A-Ramp - 15 accidents</div>`)[0];
+                popup_46397deef76673ec0ba19c4fb3d4541d.setContent(html_f680c72fc77cac0dd2e2e65dfcc239ca);
+            
+        
+
+        marker_a3376cbdd5f659db008acbccbf269257.bindPopup(popup_46397deef76673ec0ba19c4fb3d4541d)
+        ;
+
+        
+    
+    
+            var marker_23daed374eb96e7908a3db2eec368760 = L.marker(
+                [33.40750178, -111.9262829],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_425ed83b7d1156a7eeb2420e6514d272 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_23daed374eb96e7908a3db2eec368760.setIcon(icon_425ed83b7d1156a7eeb2420e6514d272);
+        
+    
+        var popup_c7e82d405bf5bb9ab711671ecdbf9b74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a0177c9a2aa5e8c56e84ba1ba677362 = $(`<div id="html_9a0177c9a2aa5e8c56e84ba1ba677362" style="width: 100.0%; height: 100.0%;">Broadway Rd / Rural Rd - 14 accidents</div>`)[0];
+                popup_c7e82d405bf5bb9ab711671ecdbf9b74.setContent(html_9a0177c9a2aa5e8c56e84ba1ba677362);
+            
+        
+
+        marker_23daed374eb96e7908a3db2eec368760.bindPopup(popup_c7e82d405bf5bb9ab711671ecdbf9b74)
+        ;
+
+        
+    
+    
+            var marker_9582751dbce8c7d27114f2d785d1f443 = L.marker(
+                [33.39276725, -111.9783383],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_74fddc8d6ceae74b222ae27c9c7db3e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9582751dbce8c7d27114f2d785d1f443.setIcon(icon_74fddc8d6ceae74b222ae27c9c7db3e7);
+        
+    
+        var popup_5f7f4bc0c9810a95b7c01c5f4d6b795d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64af02fab7bbfdfde2ede8f6f8e69804 = $(`<div id="html_64af02fab7bbfdfde2ede8f6f8e69804" style="width: 100.0%; height: 100.0%;">Southern Ave / 48th St - 13 accidents</div>`)[0];
+                popup_5f7f4bc0c9810a95b7c01c5f4d6b795d.setContent(html_64af02fab7bbfdfde2ede8f6f8e69804);
+            
+        
+
+        marker_9582751dbce8c7d27114f2d785d1f443.bindPopup(popup_5f7f4bc0c9810a95b7c01c5f4d6b795d)
+        ;
+
+        
+    
+    
+            var marker_bb3c674f1b58b8d1588ae21e45b0eaed = L.marker(
+                [33.37826, -111.96979],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_418f41e0851db77a74762059b08d51a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bb3c674f1b58b8d1588ae21e45b0eaed.setIcon(icon_418f41e0851db77a74762059b08d51a4);
+        
+    
+        var popup_2441befc7cf5f4d3baab81a67ab06d91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c01870da8272f6b825cb483f011a387d = $(`<div id="html_c01870da8272f6b825cb483f011a387d" style="width: 100.0%; height: 100.0%;">Baseline Rd / Wendler Dr - 13 accidents</div>`)[0];
+                popup_2441befc7cf5f4d3baab81a67ab06d91.setContent(html_c01870da8272f6b825cb483f011a387d);
+            
+        
+
+        marker_bb3c674f1b58b8d1588ae21e45b0eaed.bindPopup(popup_2441befc7cf5f4d3baab81a67ab06d91)
+        ;
+
+        
+    
+    
+            var marker_251f9a204c5ca0d5e75d3d337ebf3171 = L.marker(
+                [33.3783, -111.96738],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_208b03c324f65c93301f46b2137e2a6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_251f9a204c5ca0d5e75d3d337ebf3171.setIcon(icon_208b03c324f65c93301f46b2137e2a6e);
+        
+    
+        var popup_05f61637c98c79a276c1a6e5e8b79b05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6dd3a3be12a7193a05f20bd96ff718fa = $(`<div id="html_6dd3a3be12a7193a05f20bd96ff718fa" style="width: 100.0%; height: 100.0%;">Baseline Rd / I-10 Exit 155 C2-Ramp - 13 accidents</div>`)[0];
+                popup_05f61637c98c79a276c1a6e5e8b79b05.setContent(html_6dd3a3be12a7193a05f20bd96ff718fa);
+            
+        
+
+        marker_251f9a204c5ca0d5e75d3d337ebf3171.bindPopup(popup_05f61637c98c79a276c1a6e5e8b79b05)
+        ;
+
+        
+    
+    
+            var marker_1fa599c4dd5cf41fe614ab6877ec1cc6 = L.marker(
+                [33.37825837, -111.9697859],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_7e93b17e9c34ddf9f3778ebb2a1971ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1fa599c4dd5cf41fe614ab6877ec1cc6.setIcon(icon_7e93b17e9c34ddf9f3778ebb2a1971ef);
+        
+    
+        var popup_aad3c317b2d1c43539e36dfb572aae70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_777ec88656757cf5d3b2b2dad5102760 = $(`<div id="html_777ec88656757cf5d3b2b2dad5102760" style="width: 100.0%; height: 100.0%;">Baseline Rd / Wendler Dr - 13 accidents</div>`)[0];
+                popup_aad3c317b2d1c43539e36dfb572aae70.setContent(html_777ec88656757cf5d3b2b2dad5102760);
+            
+        
+
+        marker_1fa599c4dd5cf41fe614ab6877ec1cc6.bindPopup(popup_aad3c317b2d1c43539e36dfb572aae70)
+        ;
+
+        
+    
+    
+            var marker_68417d9acadb2df5e2c3ef0965558e91 = L.marker(
+                [33.37821354, -111.9525127],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_cea570c7c190a76830b0565e30f9f799 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_68417d9acadb2df5e2c3ef0965558e91.setIcon(icon_cea570c7c190a76830b0565e30f9f799);
+        
+    
+        var popup_95cb50690431abaee235ded5cafa610b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6855a1a12538b05d67cd4d778fde5e6f = $(`<div id="html_6855a1a12538b05d67cd4d778fde5e6f" style="width: 100.0%; height: 100.0%;">Baseline Rd / Hardy Dr - 13 accidents</div>`)[0];
+                popup_95cb50690431abaee235ded5cafa610b.setContent(html_6855a1a12538b05d67cd4d778fde5e6f);
+            
+        
+
+        marker_68417d9acadb2df5e2c3ef0965558e91.bindPopup(popup_95cb50690431abaee235ded5cafa610b)
+        ;
+
+        
+    
+    
+            var marker_a4a22506567e0538dd5d058e61cd5139 = L.marker(
+                [33.42201, -111.89195],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_dead689a3b3280f0aa22047efc4fdf76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a4a22506567e0538dd5d058e61cd5139.setIcon(icon_dead689a3b3280f0aa22047efc4fdf76);
+        
+    
+        var popup_606064992ea237743fecc1a2c86d954d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4682014dbb92298a6ca7d354145286e = $(`<div id="html_b4682014dbb92298a6ca7d354145286e" style="width: 100.0%; height: 100.0%;">University Dr / Price Rd - 13 accidents</div>`)[0];
+                popup_606064992ea237743fecc1a2c86d954d.setContent(html_b4682014dbb92298a6ca7d354145286e);
+            
+        
+
+        marker_a4a22506567e0538dd5d058e61cd5139.bindPopup(popup_606064992ea237743fecc1a2c86d954d)
+        ;
+
+        
+    
+    
+            var marker_bc88dab10b6a179d9bf0a04cdedfa67a = L.marker(
+                [33.40748, -111.89033],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_66334a90dea62f3f8cb482229d6be083 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bc88dab10b6a179d9bf0a04cdedfa67a.setIcon(icon_66334a90dea62f3f8cb482229d6be083);
+        
+    
+        var popup_ab689f35b017694ad5ad1f4e23623a36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_283f211c0667bf9bf2e270912efbbbd8 = $(`<div id="html_283f211c0667bf9bf2e270912efbbbd8" style="width: 100.0%; height: 100.0%;">Broadway Rd / Price Rd - 12 accidents</div>`)[0];
+                popup_ab689f35b017694ad5ad1f4e23623a36.setContent(html_283f211c0667bf9bf2e270912efbbbd8);
+            
+        
+
+        marker_bc88dab10b6a179d9bf0a04cdedfa67a.bindPopup(popup_ab689f35b017694ad5ad1f4e23623a36)
+        ;
+
+        
+    
+    
+            var marker_f5964a427aed211a119d2d0ae05e273e = L.marker(
+                [33.4075, -111.892],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_ce3ec6b20c19f6499054b45c9b837498 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f5964a427aed211a119d2d0ae05e273e.setIcon(icon_ce3ec6b20c19f6499054b45c9b837498);
+        
+    
+        var popup_9a7805bcf7ad8ced3edcbb5a53d00470 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db829e197122662bc00f216637737bbd = $(`<div id="html_db829e197122662bc00f216637737bbd" style="width: 100.0%; height: 100.0%;">Price Rd / Broadway Rd - 12 accidents</div>`)[0];
+                popup_9a7805bcf7ad8ced3edcbb5a53d00470.setContent(html_db829e197122662bc00f216637737bbd);
+            
+        
+
+        marker_f5964a427aed211a119d2d0ae05e273e.bindPopup(popup_9a7805bcf7ad8ced3edcbb5a53d00470)
+        ;
+
+        
+    
+    
+            var marker_34ccfe1e9869290143f8ae7779068640 = L.marker(
+                [33.42923899, -111.904765],
+                {}
+            ).addTo(map_06d951a5d8ff8fe97394ae4b7260ccb8);
+        
+    
+            var icon_2b430f628063609cb7e4109b5047e59b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_34ccfe1e9869290143f8ae7779068640.setIcon(icon_2b430f628063609cb7e4109b5047e59b);
+        
+    
+        var popup_7f063c691609bd15909ba4595a6a6cd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21f901050ba8bad7914791bf0a8608ea = $(`<div id="html_21f901050ba8bad7914791bf0a8608ea" style="width: 100.0%; height: 100.0%;">Rio Salado Pkwy / Perry Ln - 12 accidents</div>`)[0];
+                popup_7f063c691609bd15909ba4595a6a6cd9.setContent(html_21f901050ba8bad7914791bf0a8608ea);
+            
+        
+
+        marker_34ccfe1e9869290143f8ae7779068640.bindPopup(popup_7f063c691609bd15909ba4595a6a6cd9)
+        ;
+
+        
+    
+</script>
+</html>
